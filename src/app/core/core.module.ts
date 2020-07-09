@@ -14,6 +14,7 @@ import { PopularRecipeComponent } from './popular-recipe/popular-recipe.componen
   exports: [
     HeaderComponent,
     FooterComponent,
+    PopularRecipeComponent,
   ]
 })
 export class CoreModule { }
