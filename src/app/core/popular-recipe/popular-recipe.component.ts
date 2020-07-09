@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RecipeService } from '../recipe.service';
+import { Recipe } from '../recipe';
 
 @Component({
   selector: 'mra-popular-recipe',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./popular-recipe.component.css']
 })
 export class PopularRecipeComponent implements OnInit {
+  allPopularRecipes: Array<Recipe> = [];
 
-  constructor() { }
+  constructor(
+    private recipeService: RecipeService,
+  ) { }
 
   ngOnInit(): void {
+    this.allPopularRecipes = this.recipeService.getPopularRecipe();
   }
 
 }
