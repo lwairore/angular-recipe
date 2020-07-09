@@ -4,9 +4,10 @@ import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { PopularRecipeComponent } from './popular-recipe/popular-recipe.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, PopularRecipeComponent],
+  declarations: [HeaderComponent, FooterComponent, PopularRecipeComponent, AboutMeComponent],
   imports: [
     CommonModule,
     RouterModule,
