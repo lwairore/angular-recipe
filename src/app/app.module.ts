@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RecipeModule } from './recipe/recipe.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -14,8 +15,10 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RecipeModule
+    RecipeModule,
+    CoreModule
   ],
+  exports: [NavbarComponent,],
   providers: [],
   bootstrap: [AppComponent]
 })
