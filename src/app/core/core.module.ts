@@ -16,6 +16,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HeaderComponent,
     FooterComponent,
     PopularRecipeComponent,
+    AboutMeComponent,
   ]
 })
 export class CoreModule { }
