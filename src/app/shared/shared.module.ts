@@ -9,6 +9,9 @@ import { MinutesToTimePipe } from './minutes-to-time.pipe';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    MinutesToTimePipe,
   ]
 })
 export class SharedModule { }
