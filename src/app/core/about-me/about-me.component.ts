@@ -12,7 +12,8 @@ export class AboutMeComponent implements OnInit {
 
   constructor() {
     this.myAbout = new AboutMe(
-      'Karangu Lucas',
+      'Lucas',
+      'Karangu',
       'kwairore@gmail.com',
       "I'm Lucas and this is where I share my stuff. I am madly in love with food. You will find a balance of healthy recipes, comfort food and indulgent desserts.",
       'https://lh3.googleusercontent.com/ogw/ADGmqu-hYa6HHxvzxXyf1QUqiXAs53-OQqGahB9vjlkt=s83-c-mo'
