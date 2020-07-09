@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AboutMe } from '../about-me';
 
 @Component({
   selector: 'mra-about-me',
@@ -7,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class AboutMeComponent implements OnInit {
+  myAbout: AboutMe;
 
-  constructor() { }
+  constructor() {
+    this.myAbout = new AboutMe(
+      'Karangu Lucas',
+      'kwairore@gmail.com',
+      "I'm Lucas and this is where I share my stuff. I am madly in love with food. You will find a balance of healthy recipes, comfort food and indulgent desserts.",
+      'https://lh3.googleusercontent.com/ogw/ADGmqu-hYa6HHxvzxXyf1QUqiXAs53-OQqGahB9vjlkt=s83-c-mo'
+    )
+  }
 
   ngOnInit(): void {
   }
