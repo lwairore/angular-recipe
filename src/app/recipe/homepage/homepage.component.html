@@ -1,1 +1,115 @@
-<p>homepage works!</p>
+<div id="wrapper">
+    <header id="header">
+        <mra-header></mra-header>
+    </header>
+
+    <div>
+        <div class="rsOverflow" [ngStyle]="{'width': '1351px', 'height': '415px'}">
+            <div class="rsContainer">
+                <div>
+                    <div class="rsContent"
+                        style="visibility: visible; transition: opacity 400ms ease-in-out 0s; opacity: 1;">
+                        <img class="rsImg rsMainSlideImage"
+                            src="http://www.vasterad.com/themes/chow/images/sliderA_01.jpg"
+                            [ngStyle]="{'width': '1351px', 'height': '416px', 'margin-left': '0px', 'margin-top': '-1px'}">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+
+        <div class="twelve columns">
+
+            <h3 class="headline">Latest Recipes</h3>
+            <span class="line rb margin-bottom-35"></span>
+            <div class="clearfix"></div>
+
+            <div class="isotope" style="position: relative;">
+
+
+                <div *ngFor="let item of allAvaialableRecipes;" class="four recipe-box columns"
+                    style="position: absolute; ">
+
+                    <div class="thumbnail-holder" style="height: auto;">
+                        <a href="recipe-page-1.html">
+                            <img [src]="item.image">
+                            <div class="hover-cover"></div>
+                            <div class="hover-icon">View Recipe</div>
+                        </a>
+                    </div>
+
+                    <div class="recipe-box-content">
+                        <h3><a href="recipe-page-1.html"> {{item.title}} </a></h3>
+
+                        <div [ngSwitch]="item.rating">
+                            <div *ngSwitchCase="5" class="rating five-stars">
+                                <div class="star-rating"></div>
+                                <div class="star-bg"></div>
+                            </div>
+
+                            <div *ngSwitchCase="4" class="rating four-stars">
+                                <div class="star-rating"></div>
+                                <div class="star-bg"></div>
+                            </div>
+
+                            <div *ngSwitchCase="3" class="rating three-stars">
+                                <div class="star-rating"></div>
+                                <div class="star-bg"></div>
+                            </div>
+
+                            <div *ngSwitchCase="2" class="rating two-stars">
+                                <div class="star-rating"></div>
+                                <div class="star-bg"></div>
+                            </div>
+
+                            <div *ngSwitchCase="1" class="rating one-stars">
+                                <div class="star-rating"></div>
+                                <div class="star-bg"></div>
+                            </div>
+
+                            <div *ngSwitchDefault class="rating one-stars">
+                                <div class="star-rating"></div>
+                                <div class="star-bg"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="recipe-meta"><i class="fa fa-clock-o"></i>
+                            {{item.durationInMinutes | minutesToTime}}</div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+
+
+
+        </div>
+
+        <div class="four columns">
+
+            <mra-about-me></mra-about-me>
+
+            <mra-popular-recipe></mra-popular-recipe>
+
+        </div>
+
+
+    </div>
+
+    <div class="margin-top-5"></div>
+
+
+</div>
+
+
+
+<mra-footer></mra-footer>
