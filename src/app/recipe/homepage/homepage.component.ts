@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RecipeService } from '../../core/recipe.service';
+import { Recipe } from '../../core/recipe';
 
 @Component({
   selector: 'mra-homepage',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+  allAvaialableRecipes: Array<Recipe> = [];
 
-  constructor() { }
+  constructor(
+    private recipeService: RecipeService,
+  ) { }
 
   ngOnInit(): void {
+    this.allAvaialableRecipes = this.recipeService.getAllRecipes();
   }
 
 }
