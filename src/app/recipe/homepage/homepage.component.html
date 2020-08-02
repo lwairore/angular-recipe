@@ -37,7 +37,7 @@
                     style="position: absolute; ">
 
                     <div class="thumbnail-holder" style="height: auto;">
-                        <a href="recipe-page-1.html">
+                        <a [routerLink]="['/recipe', item.name]">
                             <img [src]="item.image">
                             <div class="hover-cover"></div>
                             <div class="hover-icon">View Recipe</div>
@@ -45,7 +45,7 @@
                     </div>
 
                     <div class="recipe-box-content">
-                        <h3><a href="recipe-page-1.html"> {{item.title}} </a></h3>
+                        <h3><a [routerLink]="['/recipe', item.name]"> {{item.title}} </a></h3>
 
                         <div [ngSwitch]="item.rating">
                             <div *ngSwitchCase="5" class="rating five-stars">
