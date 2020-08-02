@@ -3,7 +3,7 @@
     <span class="line margin-bottom-30"></span>
     <div class="clearfix"></div>
 
-    <a *ngFor="let item of allPopularRecipes" href="recipe-page-1.html" class="featured-recipe">
+    <a *ngFor="let item of allPopularRecipes" [routerLink]="['/recipe', item.name]" class="featured-recipe">
         <img [src]="item.image" [ngStyle]="{'width': '100%', 'height': 'auto'}" alt="">
 
         <div class="featured-recipe-content">
