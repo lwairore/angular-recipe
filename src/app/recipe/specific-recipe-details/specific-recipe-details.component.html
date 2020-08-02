@@ -42,7 +42,7 @@
                     </div>
                 </section>
 
-                <mra-slider [sliderImages]="recipeDetails.sliderImages"></mra-slider>
+                <mra-slider *ngIf="recipeDetails.sliderImages.length > 0" [sliderImages]="recipeDetails.sliderImages"></mra-slider>
 
 
                 <!-- Details -->
