@@ -9,3 +9,6 @@ Discover recipes, cooks and how-tos based on the Kenyan food you love.
 
 ## Recipe details page
 ![This image displays the Recipe details page for Recipe app](src/assets/img/demos/recipe-details.png)
+
+### Ingredients section
+![This image displays the Ingredients section of Recipe details page for Recipe app](src/assets/img/demos/ingredients.png)
