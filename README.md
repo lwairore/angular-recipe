@@ -12,3 +12,6 @@ Discover recipes, cooks and how-tos based on the Kenyan food you love.
 
 ### Ingredients section
 ![This image displays the Ingredients section of Recipe details page for Recipe app](src/assets/img/demos/ingredients.png)
+
+# Built with
+- [Angular](https://angular.io/)
