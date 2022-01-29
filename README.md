@@ -1,6 +1,9 @@
 # Angular Recipe App
 Discover recipes, cooks and how-tos based on the Kenyan food you love.
 
+# Demo
+Here is a working live demo: [https://lwairore.github.io/angular-recipe/](https://lwairore.github.io/angular-recipe/)
+
 ## Homepage
 ![This image displays the homepage for Recipe app](src/assets/img/demos/recipe-app-homepage.png)
 
